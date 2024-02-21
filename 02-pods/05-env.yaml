@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: env
+  labels:
+    purpose: envi variabels
+spec:
+  containers:
+  - name: environment
+    image: nginx
+    env:
+    - name: demo_greeting
+      value: "ok thanks"
+    - name: demo_farewall
+      value: "no thanks"
