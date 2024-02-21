@@ -1,0 +1,12 @@
+appVersion: v1
+kind: Pod
+metadata: 
+  name: hello-pod
+  Namespace: roboshop
+spec:
+  containers:
+  - name:
+    image: nginx
+    ports:
+    - containerport: 80
+    
