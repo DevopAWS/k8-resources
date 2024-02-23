@@ -4,7 +4,7 @@ metadata:
   name: configmap-pod
 spec:
   containers:
-  - name: configmap
+  - name: configmap-pod
     image: nginx
     ports:
     - containerPort: 80
@@ -17,6 +17,6 @@ spec:
     - name: trainer
       valueFrom:
         configMapKeyRef:
-        name: devops-configmap
-        key: trainer
+          name: devops-configmap
+          key: trainer
 
