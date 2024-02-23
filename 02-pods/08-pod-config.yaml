@@ -31,5 +31,5 @@ spec:
     ports:
     - containerPort: 80
     envFrom:
-    - configmapRef:
+    - configMapRef:
         name: devops-configmap
