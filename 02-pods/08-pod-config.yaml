@@ -1,10 +1,10 @@
 apiVersion: v1
-kind: ConfigMap
+kind: Pod
 metadata:
-  name: configmap
+  name: configmap-pod
 spec:
-  - containers:
-    name: configmap
+  containers:
+  - name: configmap
     image: nginx
     ports:
     - containerPort: 80
